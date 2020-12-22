@@ -55,10 +55,10 @@ const DishDetail = (props) => {
                 <Breadcrumb>
                     <BreadcrumbItem> <Link to="/home">Home</Link> </BreadcrumbItem>
                     <BreadcrumbItem> <Link to="/menu"> Menu </Link></BreadcrumbItem>
-                    <BreadcrumbItem active> Menu Item </BreadcrumbItem>
+                    <BreadcrumbItem active> {props.dish.name}</BreadcrumbItem>
                 </Breadcrumb>
                 <div className="col-12">
-                    <h3> Menu </h3>
+                    <h3> {props.dish.name} </h3>
                     <hr />
                 </div>
             </div>
