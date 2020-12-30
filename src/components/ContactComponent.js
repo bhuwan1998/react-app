@@ -81,10 +81,8 @@ class Contact extends Component {
         if(this.state.touched.email && email.split('').filter(x => x === '@').length !== 1) // checking if any of the characters in the email contains @, if it does not then its not an email id 
             errors.email = 'Email should contain a @';
         
-        if(this.state.touched.message && message.length < 3 )
-            errors.message = 'Last Name should be >= 3 characters';
-        else if(this.state.touched.message && message.length > 10)
-            errors.message = 'Last Name should be <= 10 characters';
+        if(this.state.touched.message && message.length < 4)
+            errors.message = 'Feedback should be >= 4 characters';
         
         return errors;
     }   

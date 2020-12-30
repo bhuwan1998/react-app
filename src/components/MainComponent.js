@@ -4,10 +4,6 @@ import Menu from './MenuComponent';
 import DishDetail from './DishDetial'
 import Contact from './ContactComponent';
 import About from './AboutComponent';
-import { DISHES } from '../shared/dishes';
-import { COMMENTS } from '../shared/Comments';
-import { LEADERS } from '../shared/leaders';
-import { PROMOTIONS } from '../shared/promotions';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import {Switch, Route, Redirect} from 'react-router-dom';
@@ -19,10 +15,7 @@ class Main extends Component{
     super(props);
     
     this.state = {
-      dishes: DISHES,
-      comments: COMMENTS, 
-      promotions: PROMOTIONS,
-      leaders: LEADERS
+     
     };
   }
 
