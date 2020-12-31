@@ -11,7 +11,7 @@ export const initialState = {
 }; // initial config for the state 
 
 // first reducer function 
-export const Reducer = (state, action) => {
+export const Reducer = (state = initialState, action) => {
     // we cannot modify the state here
     return state; // default for now!  
 };
