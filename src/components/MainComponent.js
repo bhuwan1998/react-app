@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Home from './HomeComponent';
 import Menu from './MenuComponent';
-import DishDetail from './DishDetial'
+import DishDetail from './DishDetail'
 import Contact from './ContactComponent';
 import About from './AboutComponent';
 import Header from './HeaderComponent';
