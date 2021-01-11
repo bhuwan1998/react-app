@@ -23,6 +23,7 @@ class Contact extends Component {
     //handle input change is removed because it will be managed automatically by react redux form 
 
     handleSubmit(values) {
+        this.props.postFeedback(values);
         console.log("Current State is: " + JSON.stringify(values));
         alert("Current State is: " + JSON.stringify(values));
         this.props.resetFeedbackForm();
